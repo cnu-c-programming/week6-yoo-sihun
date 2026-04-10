@@ -5,11 +5,10 @@ int main() {
     int (*p)[4];
 
     for (int i = 0; i < 2; i++) {
-        p = arr2 + i; [cite: 92]
+        p = arr2 + i;
         for (int j = 0; j < 4; j++) {
-            printf("%d\n", *(*p + j)); [cite: 97]
+            printf("%d\n", *(*p + j));
         }
     }
-
     return 0;
 }
