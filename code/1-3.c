@@ -1,13 +1,17 @@
 #include <stdio.h>
 
-void lab_1_3() {
-    char *names[5] = {"kim", "lee", "park", "choi", "jeong"};
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; ; j++) {
-            char c = *(*(names + i) + j);
-            if (c == '\0') break;
-            printf("%c", c);
+int main() {
+    char *names[5] = {"kim", "lee", "park", "choi", "jeong"}; [cite: 121]
+
+    for (int i = 0; i < 5; i++) { [cite: 122]
+        for (int j = 0; ; j++) { [cite: 123]
+            char c = *(*(names + i) + j); [cite: 125]
+            if (c == '\0') [cite: 127]
+                break; [cite: 129]
+            printf("%c", c); [cite: 131]
         }
-        printf("\n");
+        printf("\n"); [cite: 134]
     }
+
+    return 0;
 }
